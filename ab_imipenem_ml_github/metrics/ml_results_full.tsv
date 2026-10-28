@@ -1,0 +1,46 @@
+feature_set	description	model	cv_strategy	n_genomes	n_features	AUC	F1	Accuracy	Precision	Recall	MCC	Specificity	TP	TN	FP	FN
+1_universal_distance_only	Universal phylogenetic distance only	RandomForest	random_5fold	616	1	0.9015	0.8	0.836	0.7953	0.8048	0.6611	0.8575	202	313	52	49
+1_universal_distance_only	Universal phylogenetic distance only	RandomForest	clade_held_out	616	1	0.5875	0.5372	0.4151	0.4069	0.7905	-0.1024	0.1326	166	37	242	44
+1_universal_distance_only	Universal phylogenetic distance only	RandomForest	held_out_test	154	1	0.873	0.7769	0.8247	0.7966	0.7581	0.6331	0.8696	47	80	12	15
+1_universal_distance_only	Universal phylogenetic distance only	LogisticRegression	random_5fold	616	1	0.5098	0.4633	0.5487	0.4494	0.4781	0.0747	0.5973	120	218	147	131
+1_universal_distance_only	Universal phylogenetic distance only	LogisticRegression	clade_held_out	616	1	0.4816	0.4752	0.5031	0.4348	0.5238	0.0112	0.4875	110	136	143	100
+1_universal_distance_only	Universal phylogenetic distance only	LogisticRegression	held_out_test	154	1	0.5266	0.4496	0.539	0.4328	0.4677	0.0541	0.587	29	54	38	33
+1_universal_distance_only	Universal phylogenetic distance only	XGBoost	random_5fold	616	1	0.9008	0.7882	0.8247	0.7761	0.8008	0.6389	0.8411	201	307	58	50
+1_universal_distance_only	Universal phylogenetic distance only	XGBoost	clade_held_out	616	1	0.5586	0.4913	0.5808	0.513	0.4714	0.1362	0.6631	99	185	94	111
+1_universal_distance_only	Universal phylogenetic distance only	XGBoost	held_out_test	154	1	0.8787	0.8293	0.8636	0.8361	0.8226	0.7158	0.8913	51	82	10	11
+2_lineage_distance_only	Lineage-matched distance only (ST1/2/3/25/32)	RandomForest	random_5fold	460	1	0.9488	0.8753	0.8935	0.8687	0.8821	0.7824	0.9019	172	239	26	23
+2_lineage_distance_only	Lineage-matched distance only (ST1/2/3/25/32)	RandomForest	clade_held_out	460	1	0.4101	0.4767	0.537	0.4575	0.4974	0.0629	0.566	97	150	115	98
+2_lineage_distance_only	Lineage-matched distance only (ST1/2/3/25/32)	RandomForest	held_out_test	117	1	0.9228	0.8846	0.8974	0.8519	0.92	0.7945	0.8806	46	59	8	4
+2_lineage_distance_only	Lineage-matched distance only (ST1/2/3/25/32)	LogisticRegression	random_5fold	460	1	0.4557	0.4067	0.4609	0.3812	0.4359	-0.0839	0.4792	85	127	138	110
+2_lineage_distance_only	Lineage-matched distance only (ST1/2/3/25/32)	LogisticRegression	clade_held_out	460	1	0.3064	0.1212	0.3696	0.1481	0.1026	-0.3597	0.566	20	150	115	175
+2_lineage_distance_only	Lineage-matched distance only (ST1/2/3/25/32)	LogisticRegression	held_out_test	117	1	0.5415	0.5693	0.4957	0.4483	0.78	0.072	0.2836	39	19	48	11
+2_lineage_distance_only	Lineage-matched distance only (ST1/2/3/25/32)	XGBoost	random_5fold	460	1	0.9336	0.8571	0.8783	0.8528	0.8615	0.7511	0.8906	168	236	29	27
+2_lineage_distance_only	Lineage-matched distance only (ST1/2/3/25/32)	XGBoost	clade_held_out	460	1	0.3069	0.4233	0.4196	0.3657	0.5026	-0.1392	0.3585	98	95	170	97
+2_lineage_distance_only	Lineage-matched distance only (ST1/2/3/25/32)	XGBoost	held_out_test	117	1	0.88	0.8	0.8205	0.7636	0.84	0.6403	0.806	42	54	13	8
+3_amr_genes_only	AMR gene presence/absence only	RandomForest	random_5fold	616	228	0.98	0.9286	0.9416	0.9249	0.9323	0.8791	0.9479	234	346	19	17
+3_amr_genes_only	AMR gene presence/absence only	RandomForest	clade_held_out	616	228	0.6399	0.6358	0.6135	0.534	0.7857	0.2767	0.4839	165	135	144	45
+3_amr_genes_only	AMR gene presence/absence only	RandomForest	held_out_test	154	228	0.966	0.9256	0.9416	0.9492	0.9032	0.8783	0.9674	56	89	3	6
+3_amr_genes_only	AMR gene presence/absence only	LogisticRegression	random_5fold	616	228	0.959	0.924	0.9383	0.9277	0.9203	0.8721	0.9507	231	347	18	20
+3_amr_genes_only	AMR gene presence/absence only	LogisticRegression	clade_held_out	616	228	0.5851	0.474	0.4008	0.3804	0.6286	-0.1549	0.2294	132	64	215	78
+3_amr_genes_only	AMR gene presence/absence only	LogisticRegression	held_out_test	154	228	0.978	0.9194	0.9351	0.9194	0.9194	0.865	0.9457	57	87	5	5
+3_amr_genes_only	AMR gene presence/absence only	XGBoost	random_5fold	616	228	0.9828	0.9347	0.9464	0.9291	0.9402	0.8893	0.9507	236	347	18	15
+3_amr_genes_only	AMR gene presence/absence only	XGBoost	clade_held_out	616	228	0.6376	0.5772	0.4908	0.4485	0.8095	0.0716	0.2509	170	70	209	40
+3_amr_genes_only	AMR gene presence/absence only	XGBoost	held_out_test	154	228	0.9665	0.9153	0.9351	0.9643	0.871	0.8658	0.9783	54	90	2	8
+4_universal_distance_plus_amr	Universal distance + AMR genes	RandomForest	random_5fold	616	229	0.9787	0.9267	0.9399	0.9213	0.9323	0.8759	0.9452	234	345	20	17
+4_universal_distance_plus_amr	Universal distance + AMR genes	RandomForest	clade_held_out	616	229	0.6293	0.5417	0.4601	0.4262	0.7429	-0.0112	0.2473	156	69	210	54
+4_universal_distance_plus_amr	Universal distance + AMR genes	RandomForest	held_out_test	154	229	0.9663	0.9431	0.9545	0.9508	0.9355	0.9053	0.9674	58	89	3	4
+4_universal_distance_plus_amr	Universal distance + AMR genes	LogisticRegression	random_5fold	616	229	0.9592	0.9222	0.9367	0.924	0.9203	0.8688	0.9479	231	346	19	20
+4_universal_distance_plus_amr	Universal distance + AMR genes	LogisticRegression	clade_held_out	616	229	0.5817	0.4712	0.3988	0.3786	0.6238	-0.1597	0.2294	131	64	215	79
+4_universal_distance_plus_amr	Universal distance + AMR genes	LogisticRegression	held_out_test	154	229	0.979	0.9194	0.9351	0.9194	0.9194	0.865	0.9457	57	87	5	5
+4_universal_distance_plus_amr	Universal distance + AMR genes	XGBoost	random_5fold	616	229	0.9808	0.94	0.9513	0.9438	0.9363	0.899	0.9616	235	351	14	16
+4_universal_distance_plus_amr	Universal distance + AMR genes	XGBoost	clade_held_out	616	229	0.6152	0.57	0.4785	0.4413	0.8048	0.0453	0.233	169	65	214	41
+4_universal_distance_plus_amr	Universal distance + AMR genes	XGBoost	held_out_test	154	229	0.9698	0.9593	0.9675	0.9672	0.9516	0.9324	0.9783	59	90	2	3
+5_lineage_distance_plus_amr	Lineage distance + AMR genes (ST1/2/3/25/32)	RandomForest	random_5fold	460	229	0.9823	0.9354	0.9457	0.9427	0.9282	0.8886	0.9585	181	254	11	14
+5_lineage_distance_plus_amr	Lineage distance + AMR genes (ST1/2/3/25/32)	RandomForest	clade_held_out	460	229	0.6058	0.5971	0.5804	0.5035	0.7333	0.2046	0.4679	143	124	141	52
+5_lineage_distance_plus_amr	Lineage distance + AMR genes (ST1/2/3/25/32)	RandomForest	held_out_test	117	229	0.9607	0.94	0.9487	0.94	0.94	0.8952	0.9552	47	64	3	3
+5_lineage_distance_plus_amr	Lineage distance + AMR genes (ST1/2/3/25/32)	LogisticRegression	random_5fold	460	229	0.9757	0.9235	0.9348	0.9188	0.9282	0.8667	0.9396	181	249	16	14
+5_lineage_distance_plus_amr	Lineage distance + AMR genes (ST1/2/3/25/32)	LogisticRegression	clade_held_out	460	229	0.7242	0.5729	0.4717	0.4358	0.8359	0.0503	0.2038	163	54	211	32
+5_lineage_distance_plus_amr	Lineage distance + AMR genes (ST1/2/3/25/32)	LogisticRegression	held_out_test	117	229	0.9697	0.9216	0.9316	0.9038	0.94	0.8615	0.9254	47	62	5	3
+5_lineage_distance_plus_amr	Lineage distance + AMR genes (ST1/2/3/25/32)	XGBoost	random_5fold	460	229	0.9823	0.9199	0.9326	0.9271	0.9128	0.8618	0.9472	178	251	14	17
+5_lineage_distance_plus_amr	Lineage distance + AMR genes (ST1/2/3/25/32)	XGBoost	clade_held_out	460	229	0.798	0.6043	0.5957	0.5164	0.7282	0.2281	0.4981	142	132	133	53
+5_lineage_distance_plus_amr	Lineage distance + AMR genes (ST1/2/3/25/32)	XGBoost	held_out_test	117	229	0.9672	0.94	0.9487	0.94	0.94	0.8952	0.9552	47	64	3	3

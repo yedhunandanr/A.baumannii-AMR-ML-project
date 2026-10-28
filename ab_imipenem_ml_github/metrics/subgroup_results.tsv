@@ -1,0 +1,16 @@
+feature_set	subgroup	subgroup_name	n_resistant	n_susceptible	AUC	F1	Accuracy	MCC
+1_universal_distance	carb_positive	Carbapenemase-positive resistant	53	92	0.8958	0.8	0.8414	0.6756
+1_universal_distance	non_enzymatic	Non-enzymatic resistant	9	92	0.7705	0.3333	0.802	0.2679
+1_universal_distance	all_resistant	All resistant vs susceptible	62	92	0.8776	0.7907	0.8247	0.6417
+2_lineage_distance	carb_positive	Carbapenemase-positive resistant	42	67	0.9144	0.8333	0.8532	0.7236
+2_lineage_distance	non_enzymatic	Non-enzymatic resistant	8	67	0.6772	0.3704	0.7733	0.2953
+2_lineage_distance	all_resistant	All resistant vs susceptible	50	67	0.8764	0.8257	0.8376	0.6837
+3_amr_genes	carb_positive	Carbapenemase-positive resistant	53	92	0.9916	0.9524	0.9655	0.9255
+3_amr_genes	non_enzymatic	Non-enzymatic resistant	9	92	0.82	0.5333	0.9307	0.5095
+3_amr_genes	all_resistant	All resistant vs susceptible	62	92	0.9667	0.9153	0.9351	0.8658
+4_universal_plus_amr	carb_positive	Carbapenemase-positive resistant	53	92	0.9878	0.972	0.9793	0.9557
+4_universal_plus_amr	non_enzymatic	Non-enzymatic resistant	9	92	0.8659	0.7778	0.9604	0.756
+4_universal_plus_amr	all_resistant	All resistant vs susceptible	62	92	0.9701	0.9593	0.9675	0.9324
+5_lineage_plus_amr	carb_positive	Carbapenemase-positive resistant	42	67	0.9963	0.9767	0.9817	0.9623
+5_lineage_plus_amr	non_enzymatic	Non-enzymatic resistant	8	67	0.8144	0.6667	0.9333	0.6315
+5_lineage_plus_amr	all_resistant	All resistant vs susceptible	50	67	0.9672	0.9495	0.9573	0.9126

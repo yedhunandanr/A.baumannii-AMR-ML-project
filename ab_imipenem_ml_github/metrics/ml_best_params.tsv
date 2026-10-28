@@ -1,0 +1,16 @@
+feature_set	model	best_params	tuning_auc
+1_universal_distance_only	RandomForest	"{""n_estimators"": 100, ""min_samples_leaf"": 2, ""max_features"": ""log2"", ""max_depth"": null}"	0.885
+1_universal_distance_only	LogisticRegression	"{""clf__solver"": ""lbfgs"", ""clf__penalty"": ""l2"", ""clf__C"": 0.001}"	0.5404
+1_universal_distance_only	XGBoost	"{""subsample"": 1.0, ""n_estimators"": 100, ""max_depth"": 9, ""learning_rate"": 0.1, ""colsample_bytree"": 1.0}"	0.8878
+2_lineage_distance_only	RandomForest	"{""n_estimators"": 300, ""min_samples_leaf"": 1, ""max_features"": ""log2"", ""max_depth"": 10}"	0.9554
+2_lineage_distance_only	LogisticRegression	"{""clf__solver"": ""lbfgs"", ""clf__penalty"": ""l2"", ""clf__C"": 0.001}"	0.4908
+2_lineage_distance_only	XGBoost	"{""subsample"": 0.7, ""n_estimators"": 500, ""max_depth"": 3, ""learning_rate"": 0.05, ""colsample_bytree"": 0.7}"	0.9418
+3_amr_genes_only	RandomForest	"{""n_estimators"": 500, ""min_samples_leaf"": 1, ""max_features"": ""sqrt"", ""max_depth"": 30}"	0.9767
+3_amr_genes_only	LogisticRegression	"{""clf__solver"": ""lbfgs"", ""clf__penalty"": ""l2"", ""clf__C"": 1}"	0.9588
+3_amr_genes_only	XGBoost	"{""subsample"": 0.8, ""n_estimators"": 300, ""max_depth"": 9, ""learning_rate"": 0.1, ""colsample_bytree"": 1.0}"	0.9793
+4_universal_distance_plus_amr	RandomForest	"{""n_estimators"": 100, ""min_samples_leaf"": 1, ""max_features"": ""sqrt"", ""max_depth"": 10}"	0.9764
+4_universal_distance_plus_amr	LogisticRegression	"{""clf__solver"": ""lbfgs"", ""clf__penalty"": ""l2"", ""clf__C"": 1}"	0.9587
+4_universal_distance_plus_amr	XGBoost	"{""subsample"": 0.7, ""n_estimators"": 300, ""max_depth"": 6, ""learning_rate"": 0.1, ""colsample_bytree"": 0.7}"	0.9802
+5_lineage_distance_plus_amr	RandomForest	"{""n_estimators"": 300, ""min_samples_leaf"": 1, ""max_features"": ""log2"", ""max_depth"": 10}"	0.9832
+5_lineage_distance_plus_amr	LogisticRegression	"{""clf__solver"": ""saga"", ""clf__penalty"": ""l2"", ""clf__C"": 0.1}"	0.9799
+5_lineage_distance_plus_amr	XGBoost	"{""subsample"": 1.0, ""n_estimators"": 500, ""max_depth"": 6, ""learning_rate"": 0.1, ""colsample_bytree"": 0.8}"	0.9824
